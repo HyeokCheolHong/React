@@ -1,0 +1,8 @@
+/* 2024-11-20 ValidationSample.js 입력데이터 유효성 검사 및 REF 속성 대한 css 작성 */
+.success {
+  background-color: lightgreen;
+}
+
+.failure {
+  background-color: lightcoral;
+}
