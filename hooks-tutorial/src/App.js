@@ -83,9 +83,26 @@ import './App.css';
 // }
 
 // 2024-11-22 Info3.js 내용
-import Info3 from './Info3';
-const App = () => {
-  return <Info3 />
-}
+// import Info3 from './Info3';
+// const App = () => {
+//   return <Info3 />
+// }
 
+// 2024-11-25 MemberJoin.js 내용
+// import MemberJoin from './MemberJoin';
+// const App = () => {
+//   return <MemberJoin />
+// }
+
+// 2024-11-25 MemberInsert.js 내용
+// import MemberInsert from './MemberInsert';
+// const App = () => {
+//   return <MemberInsert />
+// }
+
+// 2024-11-25 LoginForm.js 내용
+import LoginForm from './LoginForm';
+const App = () => {
+  return <LoginForm />
+}
 export default App;
