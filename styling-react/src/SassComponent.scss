@@ -6,6 +6,16 @@
   // 플렉스 레이아웃 설정
   // 요소들을 수평 또는 수직 정렬 하고 자식요소는 플렉스 아이템으로 취급
 
+  // 2024-11-27 open-color 및 include-media 패키지 설치후 작업 코드
+  background-color: $oc-gray-2;
+
+  // 2024-11-27 open-color 및 include-media 패키지 설치후 작업 코드
+  @include media('<768px') {
+    // 너비가 768픽셀 이하이면 작동하는 반응형 디자인
+    background-color: $oc-gray-9;
+  }
+
+
   .box {
     background: red;
     cursor: pointer;

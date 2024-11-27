@@ -1,5 +1,13 @@
 // 2024-11-25 React css Styling을 위한 sass 사용 코드중 공통 변수 정의
 
+// 2024-11-27 React include-media 패키지 다운로드 후 작성 코드
+@import '~include-media/dist/include-media';
+// 반응형 디자인을 쉽게 만들어주는 패키지
+
+//2024-11-17 React open-color 패키지 다운로드 후 작성 코드
+@import '~open-color/open-color';
+// 다양한 색상 pallet 제공
+
 $red: #fa5252;
 $orange: #fd7e14;
 $yellow: #fcc419;
