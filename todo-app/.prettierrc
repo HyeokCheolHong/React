@@ -1,0 +1,9 @@
+// 2024-11-28 prettier 사용할때 적용하는 설정
+// {
+//   "singleQuote": true,
+//   "semi": true,
+//   "useTabs": false,
+//   "tabWidth": 2,
+//   "trailingComma": "all",
+//   "printWidth": 80
+// }

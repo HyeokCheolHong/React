@@ -1,0 +1,44 @@
+.TodoInsert {
+  display: flex;
+  background: #495057;
+
+  input {
+    background: none;
+    // 배경색 삭제
+    outline: none;
+    // 요소 주의 외각선 삭제
+    border: none;
+    // 테두리 삭제
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: white;
+
+    &::placeholder {
+      // ::placeholder는 input.textarea등에 placeholder 텍스트 스타일링 하는데 사용되는 css
+      color: gold;
+    }
+
+    flex: 1;
+    // 버튼을 제외한 모든 영역 차지
+  }
+
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    background: #868e96;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s background-color ease-in;
+
+    &:hover {
+      background: #adb5bd;
+    }
+  }
+}
