@@ -1,4 +1,3 @@
-// 2024-11-28 JS 자동완성을 위한 json 타입 설정
 {
   "compilerOptions": {
     "target": "es2020"
