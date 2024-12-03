@@ -1,4 +1,7 @@
-import { Link, useLocation, useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
+
+// 2024-12-03 Link 중복내용으로 인한 주석처리
+// import { Link, useLocation, useSearchParams } from "react-router-dom";
 /*
 userLocation React Hook 특징
   1. location 객체를 반환하고 현재 사용자가 보고 있는 페이지 정보를 담고있다.
@@ -36,11 +39,9 @@ const About = () => {
   }
 
   return (
-    <div>
+    <div style={{ marginBottom: "2px" }}>
       <h1>소개</h1>
-      <p>
-        <Link to="/">홈으로</Link>
-      </p>
+
       <p>리액트 라우터를 사용해 보는 프로젝트입니다.</p>
       <p>쿼리 스트링을 제외한 현재 주소 경로 : {location.pathname}</p>
       <p>?를 포함한 쿼리스트링 값 : {location.search}</p>
@@ -52,6 +53,26 @@ const About = () => {
       <button type="button" onClick={onIncreaseMode}>Increase mode</button>
     </div>
   );
+
+  // 2024-12-03 반복적인 내용 주석처리
+  // return (
+  //   <div>
+  //     <h1>소개</h1>
+
+  //     2024-12-03 중복되는 홈으로 이동 Link 주석처리
+  //     <p><Link to="/">홈으로</Link></p>
+
+  //     <p>리액트 라우터를 사용해 보는 프로젝트입니다.</p>
+  //     <p>쿼리 스트링을 제외한 현재 주소 경로 : {location.pathname}</p>
+  //     <p>?를 포함한 쿼리스트링 값 : {location.search}</p>
+  //     {/* http://localhost:3000/about?page=7&keyword=react 로 페이지 경로에 입력시
+  //     -> ?를 포함한 쿼리스트링 값 : ?page=7&keyword=react 라고 출력 */}
+  //     <p>detail : {detail}</p>
+  //     <p>mode : {mode}</p>
+  //     <button type="button" onClick={onToggleDetail}>Toggle detail</button>&nbsp;
+  //     <button type="button" onClick={onIncreaseMode}>Increase mode</button>
+  //   </div>
+  // );
 };
 
 export default About;

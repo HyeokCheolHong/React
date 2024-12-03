@@ -1,5 +1,9 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 // URL 파라미터는 리액트 Hook인 useParams를 사용
+
+// 2024-12-03 Link 중복내용으로 인한 주석처리
+// import { useParams, Link } from "react-router-dom";
+
 
 // 2024-12-02 React Router Component 및 URL 파라미터 연습 코드
 
@@ -33,7 +37,9 @@ const Profile = () => {
         <p>존재하지 않는 프로필입니다.</p>
       )}
       {/* 삼항조건 연산자로 profile이 존재하면 ?뒤 괄호가 실행 존재하지 않는다면 : 뒤에 괄호 실행 */}
-      <p><Link to="/">홈으로</Link></p>
+
+      {/* 2024-12-03 중복되는 홈으로 이동 Link 주석처리
+      <p><Link to="/">홈으로</Link></p> */}
     </div>
   )
 };
